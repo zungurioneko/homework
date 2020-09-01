@@ -1,6 +1,4 @@
 class User
-  attr_accessor :name, :age
-
   def initialize(name:, age:)
     @name = name
     @age = age
@@ -12,7 +10,7 @@ class User
 end
 
 class Shop
-  attr_accessor :name
+  attr_reader :name
 
   def initialize(name:)
     @name = name
