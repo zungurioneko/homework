@@ -2,12 +2,12 @@ class User
   attr_accessor :name, :age
 
   def initialize(name:, age:)
-    self.name = name
-    self.age = age
+    @name = name
+    @age = age
   end
 
   def go_to(shop)
-    puts "#{self.name}は#{shop.name}に行きました"
+    puts "#{@name}は#{shop.name}に行きました"
   end
 end
 
